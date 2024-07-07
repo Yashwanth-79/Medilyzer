@@ -40,14 +40,25 @@ def cover_page():
         """,
         unsafe_allow_html=True,
     )
-    logo_path = 'https://github.com/Yashwanth-79/Medilyzer1/blob/main/LOGO%20(1).png?raw=true'  
-    logo_base64 = get_base64_of_bin_file(logo_path)
-    st.markdown(
-        f"""
-        <center><img src="data:image/png;base64,{logo_base64}" width="550" style="margin-top: 12px;"></center>
-        """,
-        unsafe_allow_html=True,
-    )
+    def get_base64_of_image(url):
+        # Download image from URL
+        response = requests.get(url)
+        # Encode image as base64
+        if response.status_code == 200:
+            return base64.b64encode(response.content).decode('utf-8')
+        else:
+            return None
+
+    logo_path = 'https://app.gemoo.com/share/image-annotation/668462048195440640?codeId=Mla6pR4VO7OLY&origin=imageurlgenerator&card=668462026250842112'
+    logo_base64 = get_base64_of_image(logo_path)
+    
+    if logo_base64 is not None:
+        st.markdown(
+            f"""
+            <center><img src="data:image/png;base64,{logo_base64}" width="550" style="margin-top: 12px;"></center>
+            """,
+            unsafe_allow_html=True,
+        )
     st.markdown(
         "<center><h1 style='font-family: Castellar, Times, serif; font-size: 36px; color: #FF4B4B;'>PHOENIX WIZARDS</h1></center>",
         unsafe_allow_html=True,
