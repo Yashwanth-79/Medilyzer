@@ -46,7 +46,7 @@ def cover_page():
     )
     
 
-    logo_path = 'https://app.gemoo.com/share/image-annotation/668462048195440640?codeId=Mla6pR4VO7OLY&origin=imageurlgenerator&card=668462026250842112'
+    logo_path = 'https://ibb.co/G5hQJLL'
     logo_base64 = get_base64_of_image(logo_path)
     
     if logo_base64 is not None:
