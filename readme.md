@@ -12,7 +12,7 @@
    - [Running the Application](#running-the-application)
    - [Text Input Mode](#text-input-mode)
    - [Image Input Mode](#image-input-mode)
-   - [Voice Input Mode](#voice-input-mode)
+  
 
 
 ## Introduction
@@ -34,7 +34,7 @@ Medilyzer is your ultimate solution for analyzing generic medicines with precisi
 
 ## Uses of Our Project
 
-### Analyze Medical Texts, Images, and Voice Inputs
+### Analyze Medical Texts and Images
 - Seamlessly input medical data through text, image upload, or voice.
 - Extract text from images with Tesseract OCR for accurate analysis.
 - Utilize Gemini model to analyze and provide insights into medical texts, images, and voice inputs.
