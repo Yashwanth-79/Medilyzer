@@ -40,7 +40,7 @@ def cover_page():
         """,
         unsafe_allow_html=True,
     )
-    logo_path = r'C:\Users\YESHWANTH M S\Documents\version 1\Medilyzer\LOGO (1).png'  
+    logo_path = 'https://github.com/Yashwanth-79/Medilyzer1/blob/main/LOGO%20(1).png?raw=true'  
     logo_base64 = get_base64_of_bin_file(logo_path)
     st.markdown(
         f"""
