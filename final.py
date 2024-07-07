@@ -18,13 +18,13 @@ if not firebase_admin._apps:
 
 #B8CAEF #7FD689
 def get_base64_of_image(url):
-        # Download image from URL
-        response = requests.get(url)
-        # Encode image as base64
-        if response.status_code == 200:
-            return base64.b64encode(response.content).decode('utf-8')
-        else:
-            return None
+    # Download image from URL
+    response = requests.get(url)
+    # Encode image as base64
+    if response.status_code == 200:
+        return base64.b64encode(response.content).decode('utf-8')
+    else:
+        return None
 
 st.set_page_config(
     page_title="Phoenix Wizards",
@@ -45,7 +45,6 @@ def cover_page():
         unsafe_allow_html=True,
     )
     
-
     logo_path = 'https://ibb.co/G5hQJLL'
     logo_base64 = get_base64_of_image(logo_path)
     
@@ -56,10 +55,12 @@ def cover_page():
             """,
             unsafe_allow_html=True,
         )
+        
     st.markdown(
         "<center><h1 style='font-family: Castellar, Times, serif; font-size: 36px; color: #FF4B4B;'>PHOENIX WIZARDS</h1></center>",
         unsafe_allow_html=True,
     )
+    
     col1, col2 = st.columns((0.5, 0.5))
     with col1:
         st.markdown("### Features!")
@@ -67,12 +68,12 @@ def cover_page():
         st.markdown("   Enhanced security")
         st.markdown("   Real time evaluation")
         
-        
     with col2:    
         st.markdown("### Usecases!")
         st.markdown("   Generic vs Branded")
         st.markdown("   Prescription Analysis")
-        st.markdown("   price comparison")
+        st.markdown("   Price comparison")
+    
     st.markdown(
         """
         <style>
@@ -95,8 +96,10 @@ def cover_page():
         """,
         unsafe_allow_html=True,
     )
-    if st.button("START😁"):
+    
+    if st.button("START 😁"):
         st.session_state.page = 'auth'
+
 
 def authentication_page():
     st.title("Welcome to :violet[Medilyzer ⚕️]")
