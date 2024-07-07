@@ -17,10 +17,14 @@ if not firebase_admin._apps:
     firebase_admin.initialize_app(cred)
 
 #B8CAEF #7FD689
-def get_base64_of_bin_file(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
+def get_base64_of_image(url):
+        # Download image from URL
+        response = requests.get(url)
+        # Encode image as base64
+        if response.status_code == 200:
+            return base64.b64encode(response.content).decode('utf-8')
+        else:
+            return None
 
 st.set_page_config(
     page_title="Phoenix Wizards",
@@ -40,14 +44,7 @@ def cover_page():
         """,
         unsafe_allow_html=True,
     )
-    def get_base64_of_image(url):
-        # Download image from URL
-        response = requests.get(url)
-        # Encode image as base64
-        if response.status_code == 200:
-            return base64.b64encode(response.content).decode('utf-8')
-        else:
-            return None
+    
 
     logo_path = 'https://app.gemoo.com/share/image-annotation/668462048195440640?codeId=Mla6pR4VO7OLY&origin=imageurlgenerator&card=668462026250842112'
     logo_base64 = get_base64_of_image(logo_path)
