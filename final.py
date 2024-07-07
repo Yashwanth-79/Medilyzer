@@ -45,7 +45,7 @@ def cover_page():
         unsafe_allow_html=True,
     )
     
-    logo_path = None
+    logo_path = 'https://ibb.co/G5hQJLL'
     logo_base64 = get_base64_of_image(logo_path)
     
     if logo_base64 is not None:
