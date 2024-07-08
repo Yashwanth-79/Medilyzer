@@ -1,6 +1,0 @@
-streamlit
-google.generativeai
-pillow
-SpeechRecognition
-google-api-core
-firebase-admin
