@@ -1,10 +1,9 @@
 
 
+
 ![](https://github.com/Yashwanth-79/Medilyzer/blob/main/LOGO%20(1).png?raw=true)
 
 <h1 style="text-align: left; font-size:50px;color: orange;">Welcome to Medilyzer</h1>
-
-// **YouTube** = https://youtu.be/65dQ7jX4hqw
 
 ## Table of Contents
 
@@ -103,4 +102,33 @@ To run Medilyzer locally, follow these steps:
 
   
    
+## Tools that are used to build this application
 
+1. **Frontend**
+   
+   Streamlit
+
+   ![](https://github.com/amBITion-24/phoenix_wizards/blob/main/Medilyzer%201.0.0/Screenshot%202024-07-07%20132558.png)
+    
+   HTML & CSS
+
+
+   ![](https://github.com/amBITion-24/phoenix_wizards/blob/main/Medilyzer%201.0.0/Screenshot%202024-07-07%20125241.png)
+
+1. **Backend**
+   
+   Firebase
+
+   ![](https://github.com/amBITion-24/phoenix_wizards/blob/main/Medilyzer%201.0.0/Screenshot%202024-07-07%20125139.png)
+
+
+   pillow
+
+   ![](https://github.com/amBITion-24/phoenix_wizards/blob/main/Medilyzer%201.0.0/Screenshot%202024-07-07%20130110.png)
+
+
+   Gemini
+
+   ![](https://github.com/amBITion-24/phoenix_wizards/blob/main/Medilyzer%201.0.0/Screenshot%202024-07-07%20142001.png)
+
+   
