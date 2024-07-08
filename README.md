@@ -1,7 +1,7 @@
 
 
 
-![](Medilyzer/LOGO (1).png)
+![]([Medilyzer/LOGO (1).png](https://github.com/Yashwanth-79/Medilyzer-/blob/e8f15ce79ca384db98f60b9832597d827e25a595/Medilyzer/LOGO%20(1).png))
 
 <h1 style="text-align: left; font-size:50px;color: orange;">Welcome to Medilyzer</h1>
 
