@@ -13,7 +13,7 @@ import requests
 
 # Firebase initialization
 if not firebase_admin._apps:
-    cred = credentials.Certificate("ambition-hackathon-6b2d4e1d4a51.json")
+    cred = credentials.Certificate("ambition-.json")
     firebase_admin.initialize_app(cred)
 
 #B8CAEF #7FD689
@@ -113,7 +113,7 @@ def authentication_page():
             payload = json.dumps(payload)
             r = requests.post(
                 rest_api_url,
-                params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"},
+                params={"key": ""},
                 data=payload,
             )
             try:
@@ -139,7 +139,7 @@ def authentication_page():
             payload = json.dumps(payload)
             r = requests.post(
                 rest_api_url,
-                params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"},
+                params={"key": ""},
                 data=payload,
             )
             try:
@@ -165,7 +165,7 @@ def authentication_page():
             payload = json.dumps(payload)
             r = requests.post(
                 rest_api_url,
-                params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"},
+                params={"key": ""},
                 data=payload,
             )
             if r.status_code == 200:
@@ -243,9 +243,9 @@ def authentication_page():
         st.button("Sign out", on_click=t)
 
 def main_page():
-    genai.configure(api_key='AIzaSyBLofJGHX1U96SCLOn5hytoOaLcEIDoFcY') 
-    GOOGLE_API_KEY = 'AIzaSyAWk4jkQNPJ9rrpWalf1e3gEm48qKU4qsc'  
-    SEARCH_ENGINE_ID = '201eb35e9dc2f47b8'  
+    genai.configure(api_key='') 
+    GOOGLE_API_KEY = ''  
+    SEARCH_ENGINE_ID = ''  
     generation_config = {
         "temperature": 0.2,
         "top_p": 1,
