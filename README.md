@@ -19,7 +19,7 @@
 
 ## Introduction
 
-Medilyzer is a powerful tool designed to analyze generic medicines, leveraging advanced AI models and technologies. It enables users to input medical information through text, images, and voice, providing detailed insights into generic medicines' properties and usage.
+Medilyzer is a powerful tool designed to analyze generic medicines, leveraging advanced AI models and technologies. It enables users to input medical information through text and image, providing detailed insights into generic medicines' properties and usage.
 
 ## Features
 
